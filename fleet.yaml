@@ -3,7 +3,7 @@ helm:
   releaseName: trivy-test
   repo: https://aquasecurity.github.io/helm-charts/
   chart: trivy
-  version: 0.41.0
+  version: 0.37.2
 targetCustomizations:
 - name: older-version-support1
   defaultNamespace: trivy-test-older

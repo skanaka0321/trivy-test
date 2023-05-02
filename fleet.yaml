@@ -3,13 +3,13 @@ helm:
   releaseName: trivy-test
   repo: https://aquasecurity.github.io/helm-charts/
   chart: trivy
-  version: 0.4.13
+  version: 0.41.0
 targetCustomizations:
 - name: older-version-support1
   defaultNamespace: trivy-test-older
   helm:
     releaseName: trivy-test-older
-    version: 0.4.8
+    version: 0.39.0
   clusterSelector:
     matchLabels:
       trivyTest: true
@@ -20,4 +20,4 @@ targetCustomizations:
       trivyTest: true
   helm:
     releaseName: trivy-test-very-old
-    version: 0.4.2
+    version: 0.37.3
